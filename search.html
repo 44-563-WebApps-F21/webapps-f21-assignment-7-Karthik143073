@@ -32,7 +32,7 @@
         <pre>
 
         </pre>
-        <button onclick="newGame()">Reset</button>
+        <!-- <button onclick="newGame()">Reset</button> -->
         <div class="container">
             <div class="row">
                 <div class="col-sm-2">
@@ -171,17 +171,7 @@
                 var distances = Math.abs(x2 - x1) + Math.abs(y2 - y1);
                 return distances;
             }
-            function newGame() {
-            triesCount = 0
-            animalLocation = Math.floor(Math.random() * 23 + 0)
-            document.getElementById("tries").innerHTML = "Number of tries is 0."
-            for (var i = 0; i < 24; i++) {
-                if (ids[i] == ids[animalLocation])
-                    document.getElementById(ids[i]).src = "images/monkeyy.jpg"
-
-            }
-        }
-
+           
         </script>
 
 
